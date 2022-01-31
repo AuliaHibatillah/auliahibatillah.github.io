@@ -5,163 +5,244 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Aulia Hibatillah's Github Page</title>
-        <!-- Favicon-->
+        <title>Bajur_ - War Thunder Grind Calculator</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <!-- Simple line icons-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            function division(value) {
+                var tank1,tank2,tank3,plane1,plane2,plane3,heli1,heli2,heli3 ;
+                tank1=value / 7500 ;
+                tank2=value / 15000 ;
+                tank3=value / 30000 ;
+                plane1=value / 15000 ;
+                plane2=value / 30000 ;
+                plane3=value / 60000 ;
+                heli1=value / 6000 ;
+                heli2=value / 12500 ;
+                heli3=value / 25000 ;
+
+                tank1=parseFloat(tank1).toFixed(2) + " $" ;
+                tank2=parseFloat(tank2).toFixed(2) + " $" ;
+                tank3=parseFloat(tank3).toFixed(2) + " $" ;
+                plane1=parseFloat(plane1).toFixed(2) + " $" ;
+                plane2=parseFloat(plane2).toFixed(2) + " $" ;
+                plane3=parseFloat(plane3).toFixed(2) + " $" ;
+                heli1=parseFloat(heli1).toFixed(2) + " $" ;
+                heli2=parseFloat(heli2).toFixed(2) + " $" ;
+                heli3=parseFloat(heli3).toFixed(2) + " $" ;
+
+                document.getElementById('tank1').innerHTML = tank1 ;
+                document.getElementById('tank2').innerHTML = tank2 ;
+                document.getElementById('tank3').innerHTML = tank3 ;
+                document.getElementById('plane1').innerHTML = plane1 ;
+                document.getElementById('plane2').innerHTML = plane2 ;
+                document.getElementById('plane3').innerHTML = plane3 ;
+                document.getElementById('heli1').innerHTML = heli1 ;
+                document.getElementById('heli2').innerHTML = heli2 ;
+                document.getElementById('heli3').innerHTML = heli3 ;
+            }
+        </script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">My Tools</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="https://discordapp.com/users/307431017893986306/" target="_blank">Contact Us : CrouchingBadger#5583</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1"><br><br><br><br>Muhammad Aulia Hibatillah</h1>
-                <h3 class="mb-5"><em>| Data Science Technology Student at Universitas Airlangga |<br>| Game Booster |</em></h3>
-                <a class="btn btn-dark btn-xl" href="#about">More About Me</a> <br> <br>
-                <a class="btn btn-dark btn-xl" href="https://drive.google.com/uc?export=download&amp;id=1l4oZxDT7ZSMJRzvS7seyt12Vu0gLMt9B"><i class="fa fa-download"></i>Download Laporan</a>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Bajur & Co.</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">We are a War Thunder grinding services that help those who doesn't have the time to grind their favorite vehicle. Swift grind and account security is our main priority</h2>
+                        <a class="btn btn-primary" href="#signup">Calculate Grind Cost</a>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>About Me</h2>
-                        <p class="lead mb-5">
-                            I am an undergraduate student at Universitas Airlangga and currently studying Data Science Technology. I am also a freelance game booster in a military-themed MMORPG called War Thunder. I love designing virtual backgrounds that i sometimes uses for my online classes. <br> If you are a War Thunder Player that dont have the time to grind the vehicle you want, feel free to contact me
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Better than GE</h2>
+                        <p class="text-white-50">
+                            We offer a more affordable options for those who wanted to get a particular vehicle compared to going straight and spend GE to buy the required research points. 
+                            Especially to those who have premium account and premium vehicles already.
+                            Our service comes with Silver Lions bonus and we will help with Daily, Special, or Battle Pass tasks during the grind process.
                         </p>
-                        <a class="btn btn-dark btn-xl" href="https://www.canva.com/design/DAEp5bqVXHg/YGIzxrPmdf-ks4q0HQoCWw/view?website#2">Boosting Rate</a>
                     </div>
                 </div>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
-        <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-
-                    <h2 class="mb-5">Find me on other platforms</h2>
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-grindcost.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Flexible Pricing</h4>
+                            <p class="text-black-50 mb-0">The grind cost will be determined on whether you have premiums or not. Although we suggest that you at least have a premium account to make the grinding process cheaper and faster. Price is always NEGOTIABLE.
+                                <br><br><br>SL Bonus will be proportional to the amount of RP grinded<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="row gx-4 gx-lg-5" href="https://twitter.com/MCRN_Tachi">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-twitter"></i></span>
-                        <h4><strong>Twitter</strong></h4>
-			    <p class="text-faded mb-0">twitter.com/MCRN_Tachi</p>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Customizable</h4>
+                                    <p class="mb-0 text-white-50">We also provide grinding services for War Thunder events such as star, and crafting events. You can request  specific grinds such as Silver lions or modification/spading, and subscription</p>
+                                    <hr class="d-none d-lg-block mb-0 ms-0" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-reddit-alien"></i></span>
-                        <h4><strong>Reddit</strong></h4>
-			    <p class="text-faded mb-0">www.reddit.com/user/Old-Reaction4495</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-discord"></i></span>
-                        <h4><strong>Discord</strong></h4>
-			    <p class="text-faded mb-0">CrouchingBadger#5583</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-steam"></i></span>
-                        <h4><strong>Steam</strong></h4>
-			    <p class="text-faded mb-0">steamcommunity.com/id/auliahibatillah</p>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">Secure & Legal</h4>
+                                    <p class="mb-0 text-white-50">We do not share nor keep any records of our customer account details. We guarantee that your account will be secure and the grinding process will not involve any illegal activities.</p>
+                                    <hr class="d-none d-lg-block mb-0 me-0" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h2 class="mb-5">Editing Portofolio</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Harry Styles VBG</div>
-                                    <p class="mb-0">Virtual Background of UNAIR's logo with Harry Style</p>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <h2 class="text-white mb-5">Estimate Your Grinding Cost</h2>
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Email address input-->
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input class="form-control" type="text" placeholder="Enter The Amount of RP you need" name="" onkeyup="division(this.value);" />
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Tom Brady VBG</div>
-                                    <p class="mb-0">Virtual Background of UNAIR's logo with the GOAT himself</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">VBG Twice's Eyes Wide Open</div>
-                                    <p class="mb-0">Virtual Background consisting of UNAIR's logo with Twice photoshot image for their Eyes Wide Open album</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">VBG Twice's Yes or Yes</div>
-                                    <p class="mb-0">Virtual Background consisting of UNAIR's logo with Twice photoshot image for Yes or Yes EP cover</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
-                        </a>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Call to Action-->
-        <section class="content-section bg-primary text-white">
-			<div class="container px-4 px-lg-5"><h2><span class="jbawah">Langkah Pembuatan Github Pages dengan GIT</span></h2>
-                <ol style="text-align: justify;">
-                <li>Login ke GitHub</li>	
-                <li>Buat repository baru dengan judul url github page</li>
-                <li>Buka Git</li>
-                <li>Melakukan remote terhadap repositori yang ada di Github</li>
-                <li>Add dan Commit semua file yang dibutuhkan untuk membuat website github page</li>
-                <li>push file yang sudah di-commit ke dalam repositori GitHub</li>
-                <li>Cek status repositori</li>
-                <li>GithubPages sudah dapat diakses</li>
-                </ol></div>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <h4 class="text-uppercase m-0">No Premium</h4>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">TANKS</h4>
+                                <div class="small text-black-50" id="tank1"></div>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">PLANES</h4>
+                                <div class="small text-black-50" id="plane1"></div>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">HELICOPTER</h4>
+                                <div class="small text-black-50" id="heli1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <h4 class="text-uppercase m-0">With Premium Account or Vehicle</h4>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">TANKS</h4>
+                                <div class="small text-black-50" id="tank2"></div>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">PLANES</h4>
+                                <div class="small text-black-50" id="plane2"></div>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">HELICOPTER</h4>
+                                <div class="small text-black-50" id="heli2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <h4 class="text-uppercase m-0">With Both Premium Account and Vehicle</h4>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">TANKS</h4>
+                                <div class="small text-black-50" id="tank3"></div>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">PLANES</h4>
+                                <div class="small text-black-50" id="plane3"></div>
+                                <hr class="my-4 mx-auto" />
+                                <h4 class="text-uppercase m-0">HELICOPTER</h4>
+                                <div class="small text-black-50" id="heli3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <br></br>
+                        <a class="btn btn-primary" href="https://discordapp.com/users/307431017893986306/" target="_blank">Contact Us (Discord)</a>
+                    </div>
+                    <div class="social d-flex justify-content-center">
+                        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
         </section>
+        
         <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
-                <p class="text-muted small mb-0">Copyright &copy; Aulia Hibatillah 2021</p>
-            </div>
-        </footer>
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
